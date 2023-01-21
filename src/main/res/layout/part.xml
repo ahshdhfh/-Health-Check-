@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TabHost
+            android:id="@+id/tabHost1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- TabWidget의 id값이 반드시 "tabs"로 지정되어야 함. -->
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!-- FrameLayout의 id값이 반드시 "tabcontent"로 지정되어야 함. -->
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 첫 번째 페이지. content1 -->
+                    <LinearLayout
+                        android:id="@+id/content1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#8BC34A"
+                            android:textSize="20dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold|italic"
+                            android:padding="8dp"
+                            android:text="1. Lateral raise" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/leternal"
+                            android:scaleType="fitXY"/>
+
+
+                    </LinearLayout>
+
+                    <!-- 두 번째 페이지. content2 -->
+                    <LinearLayout
+                        android:id="@+id/content2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#009688"
+                            android:textSize="20dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold|italic"
+                            android:padding="8dp"
+                            android:text="2. Bench press" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/bench"
+                            android:scaleType="fitXY"/>
+
+                    </LinearLayout>
+
+                    <!-- 세 번째 페이지. content3 -->
+                    <LinearLayout
+                        android:id="@+id/content3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#2196F3"
+                            android:textSize="20dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold|italic"
+                            android:padding="8dp"
+                            android:text="3. let full down" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/letfull"
+                            android:scaleType="fitXY"/>
+
+                    </LinearLayout>
+
+                    <!-- 네 번째 페이지. content4 -->
+                    <LinearLayout
+                        android:id="@+id/content4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#71eae6"
+                            android:textSize="20dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold|italic"
+                            android:padding="8dp"
+                            android:text="4. squuat" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/squuat"
+                            android:scaleType="fitXY"/>
+
+                    </LinearLayout>
+
+                    <!-- 다섯 번째 페이지. content5 -->
+                    <LinearLayout
+                        android:id="@+id/content5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#d369ed"
+                            android:textSize="20dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold|italic"
+                            android:padding="8dp"
+                            android:text="5. hemmer cul" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/hemmer"
+                            android:scaleType="fitXY"/>
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/partreturnbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:background="@android:color/holo_orange_light"
+        android:text="돌아가기" />
+
+
+</LinearLayout>
